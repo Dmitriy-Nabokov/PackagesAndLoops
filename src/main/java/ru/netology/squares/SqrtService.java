@@ -1,14 +1,15 @@
 package ru.netology.squares;
 
 public class SqrtService {
-    public int calcSqrt(int x, int y) {
+    public int calcSqrt(int lowerBound, int upperBound) {
 
-        int z;
+
+        int z; // оперативная переменная
         int SQRAmount = 0;
 
         for (int i = 10; i <= 99; i++) {
             z = i * i;
-            if (z >= x && z <= y) {
+            if (z >= lowerBound && z <= upperBound) {
                 SQRAmount++;
             }
         }
